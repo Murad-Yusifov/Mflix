@@ -2,7 +2,12 @@
     background-image: linear-gradient(to right,#003a70,#01498C,#005CB1,#0062BC,#01498C, #003a70);
 
     .curlyImg {
-        width: 70px;
+        width: 500px;
+        height: 70%;
+        position: "fixed";
+        top: 0;
+        left: 0;
+        z-index:2;
     
     }
 
