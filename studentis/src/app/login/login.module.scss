@@ -1,14 +1,22 @@
 .wrapper {
-    background-image: linear-gradient(to right,#003a70,#01498C,#005CB1,#0062BC,#01498C, #003a70);
+  background-image: linear-gradient(
+    to right,
+    #003a70,
+    #01498c,
+    #005cb1,
+    #0062bc,
+    #01498c,
+    #003a70
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-    .curlyImg {
-        width: 500px;
-        height: 70%;
-        position: "fixed";
-        top: 0;
-        left: 0;
-        z-index:2;
-    
-    }
-
+  .curlyImg {
+    width: 500px;
+    height: 70%;
+    position: "fixed";
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 }

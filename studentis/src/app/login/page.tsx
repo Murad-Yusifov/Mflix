@@ -5,7 +5,7 @@ import RandomImg from "@/components/images/RandomImg";
 export default function Login() {
   return (
     <div
-      className={`${styles.wrapper} flex justify-center items-center h-screen text-black`}
+      className={`${styles.wrapper} flex justify-center items-center h-screen text-white backdrop-blur-3xl`}
     >
          <RandomImg
       />

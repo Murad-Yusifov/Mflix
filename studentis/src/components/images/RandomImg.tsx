@@ -72,8 +72,8 @@ const RandomBackground: React.FC = () => {
           key={idx}
           style={{
             position: "absolute",
-            top: positions[idx]?.top || "50%",
-            left: positions[idx]?.left || "50%",
+            top: positions[idx]?.top || Math.floor(Math.random() * window.innerHeight) + "px",
+            left: positions[idx]?.left ||  Math.floor(Math.random() * window.innerHeight) + "px",
           }}
         >
           <Image src={src} alt={`image-${idx}`} width={100} height={100} />
