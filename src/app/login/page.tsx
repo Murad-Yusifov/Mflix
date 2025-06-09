@@ -2,7 +2,8 @@
 "use client"
 import styles from "@/app/login/login.module.scss";
 import SignIn from "@/components/buttons/signIn/SignIn";
-import RandomImg from "@/components/images/RandomImg";
+import dynamic from "next/dynamic";
+const RandomImg = dynamic(() => import("@/components/images/RandomImg"), { ssr: false });
 
 export default function Login() {
   return (
