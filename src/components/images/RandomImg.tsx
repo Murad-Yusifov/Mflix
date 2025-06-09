@@ -11,7 +11,6 @@ import groupImage6 from "@/assets/Group (6).png"; // Şəklin olduğu yol
 import groupImage7 from "@/assets/Group (8).png"; // Şəklin olduğu yol
 import groupImage8 from "@/assets/Group (9).png"; // Şəklin olduğu yol
 import groupImage9 from "@/assets/Group (7).png"; // Şəklin olduğu yol
-import { redirect } from "next/dist/server/api-utils";
 
 interface Position {
   top: string;
