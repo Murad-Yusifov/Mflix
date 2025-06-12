@@ -2,7 +2,6 @@
 "use client"
 import styles from "@/app/login/login.module.scss";
 import dynamic from "next/dynamic";
-import Configure from "./components/loginForm/Configure";
 const RandomImg = dynamic(() => import("@/components/images/RandomImg"), { ssr: false });
 
 export default function Login() {
@@ -15,8 +14,6 @@ export default function Login() {
         className={`${styles.curlyImg} bg-transparent p-8 rounded-lg shadow-2xl w-[80%] max-w-md`}
       >
         <h1 className="text-xl font-bold mb-6 text-center ">Login</h1>
-
-        <Configure/>
         
         
       </div>
