@@ -8,13 +8,13 @@ const RandomImg = dynamic(() => import("@/components/images/RandomImg"), { ssr: 
 export default function Login() {
   return (
     <div
-      className={`${styles.wrapper} flex justify-center items-center h-screen text-white backdrop-blur-3xl`}
+      className={`${styles.wrapper} flex justify-center items-center p-4 h-screen text-white backdrop-blur-3xl`}
     >
          <RandomImg/>
       <div
-        className={`${styles.curlyImg} bg-transparent p-8 rounded-lg shadow-md w-[80%] max-w-md`}
+        className={`${styles.curlyImg} bg-transparent p-8 rounded-lg shadow-2xl w-[80%] max-w-md`}
       >
-        <h1 className="text-2xl font-bold mb-6 text-center ">Login</h1>
+        <h1 className="text-xl font-bold mb-6 text-center ">Login</h1>
 
         <Configure/>
         

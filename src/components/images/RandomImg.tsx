@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import groupImage from "@/assets/Group.png"; // Şəklin olduğu yol
-import groupImage1 from "@/assets/Group (1).png"; // Şəklin olduğu yol
-import groupImage2 from "@/assets/Group (2).png"; // Şəklin olduğu yol
-import groupImage3 from "@/assets/Group (3).png"; // Şəklin olduğu yol
-import groupImage4 from "@/assets/Group (4).png"; // Şəklin olduğu yol
-import groupImage5 from "@/assets/Group (5).png"; // Şəklin olduğu yol
-import groupImage6 from "@/assets/Group (6).png"; // Şəklin olduğu yol
-import groupImage7 from "@/assets/Group (8).png"; // Şəklin olduğu yol
-import groupImage8 from "@/assets/Group (9).png"; // Şəklin olduğu yol
-import groupImage9 from "@/assets/Group (7).png"; // Şəklin olduğu yol
+import groupImage from "@/assets/images/Group.png"; // Şəklin olduğu yol
+import groupImage1 from "@/assets/images/Group (1).png"; // Şəklin olduğu yol
+import groupImage2 from "@/assets/images/Group (2).png"; // Şəklin olduğu yol
+import groupImage3 from "@/assets/images/Group (3).png"; // Şəklin olduğu yol
+import groupImage4 from "@/assets/images/Group (4).png"; // Şəklin olduğu yol
+import groupImage5 from "@/assets/images/Group (5).png"; // Şəklin olduğu yol
+import groupImage6 from "@/assets/images/Group (6).png"; // Şəklin olduğu yol
+import groupImage7 from "@/assets/images/Group (8).png"; // Şəklin olduğu yol
+import groupImage8 from "@/assets/images/Group (9).png"; // Şəklin olduğu yol
+import groupImage9 from "@/assets/images/Group (7).png"; // Şəklin olduğu yol
 
 interface Position {
   top: string;

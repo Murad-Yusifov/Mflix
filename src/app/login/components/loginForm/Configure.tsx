@@ -11,7 +11,7 @@ const Configure = () => {
   };
 
   return (
-      <form className="flex flex-col justify-center gap-2 w-full h-full pb-6 text-center bg-transparent rounded-3xl">
+      <form className="flex flex-col justify-center gap-2 w-full h-full text-center bg-transparent rounded-3xl">
         <h3 className="mb-3 text-3xl font-extrabold text-dark-grey-900">
           Sign In
         </h3>
@@ -38,7 +38,7 @@ const Configure = () => {
           htmlFor="email"
           className="mb-2 text-sm text-start text-grey-900"
         >
-          Email*
+          Email
         </label>
         <input
           id="email"
@@ -50,7 +50,7 @@ const Configure = () => {
           htmlFor="password"
           className="mb-2 text-sm text-start text-grey-900"
         >
-          Password*
+          Password
         </label>
         <input
           id="password"
