@@ -8,25 +8,25 @@ import Check from "../checkBox/Check";
 
 const LoginPage = () => {
   return (
-    <div className="w-full flex bg-dark ">
+    <div className=" w-7/8 justify-center pl-80 md::w-full flex bg-dark ">
       {/* left side onSubmit={formik.handleSubmit} */}
-      <form  className="w-4/8 flex justify-center items-center">
+      <form className="w-full sm:w-4/8 flex justify-center items-center ">
         <div
-          className="w-[480px] h-[450px] bg-[#1F2937] text-white rounded-2xl flex flex-col justify-around "
+          className="w-full sm:w-[480px] h-[450px] bg-[#1F2937] text-white rounded-2xl flex flex-col justify-around "
           style={{ padding: "25px" }}
         >
           <div className="flex items-center gap-2 ">
             <Image src={logo} alt="logo" width={30} height={30} />
             <span>(SIS)</span>
           </div>
-          <span>Welcome back</span>
-          <p className="text-sm">
+          <span className="text-xl sm:">Welcome back</span>
+          <p className="text-[10px] sm:text-sm">
             Start your website in seconds. Don’t have an account?{" "}
             <span className="text-blue-400 cursor-pointer">Sign up</span>.
           </p>
-          <div className="flex justify-around  ">
+          <div className="flex-col gap-4 sm:flex flex-row justify-around  ">
             {/* email */}
-            <div className="w-3/8 flex flex-col gap-0.5">
+            <div className="w-full sm:w-3/8 flex flex-col gap-0.5">
               <label htmlFor="email">email</label>
               <input
                 id="email"
@@ -37,7 +37,7 @@ const LoginPage = () => {
               />
             </div>
             {/* password */}
-            <div className="w-3/8 flex flex-col gap-0.5 ">
+            <div className="w-full sm:w-3/8 flex flex-col gap-0.5 ">
               <label htmlFor="email">password</label>
               <input
                 id="password "
@@ -48,14 +48,14 @@ const LoginPage = () => {
               />
             </div>
           </div>
-          <div className="h-[20px] flex justify-around items-center text-gray-100  ">
+          <div className="h-[35px]  sm:h-[20px] flex justify-around items-center text-gray-100  ">
             <hr className="w-3/8" />
             <span className="">or</span>
             <hr className="w-3/8" />
           </div>
           {/* checkbox */}
-          <Check/>
-          
+          <Check />
+
           {/* auth */}
           <div className="w-full h-3/8 flex flex-col gap-4 justify-evenly">
             {/* firebase auth */}
@@ -68,7 +68,9 @@ const LoginPage = () => {
                 className="h-5 mr-2 "
               />
 
-              <span className="group-hover:text-black">Sign in with Google</span>
+              <span className="group-hover:text-black">
+                Sign in with Google
+              </span>
             </div>
             {/* width facebook */}
             <div className="w-full h-[30px] flex justify-center items-center gap-2 border rounded-md border-gray-400 cursor-pointer hover:bg-gray-200  duration-500 group">
@@ -77,13 +79,12 @@ const LoginPage = () => {
                 Sign in with Facebook
               </span>
             </div>
-            <SignIn/> 
+            <SignIn />
           </div>
         </div>
-        
       </form>
       {/* right side */}
-      <div className="w-4/8 flex justify-center items-center ">
+      <div className="hidden sm: w-3/8 md:flex w-4/8 justify-center items-center">
         <Image src={sideImage} alt="left" className="w-3/4 h-3/4" />
       </div>
     </div>
