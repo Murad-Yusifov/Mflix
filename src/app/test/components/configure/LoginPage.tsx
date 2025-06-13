@@ -1,38 +1,93 @@
-import Image from 'next/image'
-import React from 'react'
-import logo from '@/assets/logo/logo2.png'
-import sideImage from "@/assets/loginPage/image.png"
+import Image from "next/image";
+import logo from "@/assets/logo/logo2.png";
+import sideImage from "@/assets/loginPage/image.png";
+import google from "@/assets/loginPage/authLogos/google.png";
+import { FaFacebook } from "react-icons/fa";
+import SignIn from "../SignIn/SignIn";
+import Check from "../checkBox/Check";
 
 const LoginPage = () => {
   return (
-   <div className="w-full flex ">
-   <div className="w-4/8 flex justify-center items-center">
-     <div className="w-[420px] h-[400px] border bg-[#1F2937] text-white rounded-2xl " style={{padding:"18px"}}>
-        <div className="flex items-center gap-2 ">
-            <Image src={logo} alt='logo' width={30} height={30} />
+    <div className="w-full flex bg-dark ">
+      {/* left side onSubmit={formik.handleSubmit} */}
+      <form  className="w-4/8 flex justify-center items-center">
+        <div
+          className="w-[480px] h-[450px] bg-[#1F2937] text-white rounded-2xl flex flex-col justify-around "
+          style={{ padding: "25px" }}
+        >
+          <div className="flex items-center gap-2 ">
+            <Image src={logo} alt="logo" width={30} height={30} />
             <span>(SIS)</span>
-        </div>
-            <span>Welcome back</span>
-            <p className='text-sm'>Start your website in seconds. Don’t have an account? <span className='text-blue-400 cursor-pointer'>Sign up</span>.</p>
-           <div className="flex justify-around  ">
+          </div>
+          <span>Welcome back</span>
+          <p className="text-sm">
+            Start your website in seconds. Don’t have an account?{" "}
+            <span className="text-blue-400 cursor-pointer">Sign up</span>.
+          </p>
+          <div className="flex justify-around  ">
             {/* email */}
             <div className="w-3/8 flex flex-col gap-0.5">
-                <label htmlFor="email">email</label>
-             <input id='email' type="email" placeholder='name@student.com' className='border-none bg-[#374151] rounded-md h-[30px] 'style={{paddingLeft:"10px"}}/>
+              <label htmlFor="email">email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="name@student.com"
+                className="border-none text-sm bg-[#374151] rounded-md h-[30px] "
+                style={{ paddingLeft: "10px" }}
+              />
             </div>
-             {/* password */}
-             <div className="w-3/8 flex flex-col gap-0.5 ">
-                <label htmlFor="email">password</label>
-             <input id='password ' type="password" placeholder='••••••••' className='border-none bg-[#374151] rounded-md pl-0.5 h-[30px]' style={{paddingLeft:"10px"}}/>
+            {/* password */}
+            <div className="w-3/8 flex flex-col gap-0.5 ">
+              <label htmlFor="email">password</label>
+              <input
+                id="password "
+                type="password"
+                placeholder="••••••••"
+                className="border-none bg-[#374151] text-sm rounded-md pl-0.5 h-[30px]"
+                style={{ paddingLeft: "10px" }}
+              />
             </div>
-           </div>
-    </div>
-    </div>
-    <div className="w-4/8 flex justify-center items-center">
-      <Image src={sideImage} alt='left' className='w-3/4 h-3/4' />
-    </div>
-   </div>
-  )
-}
+          </div>
+          <div className="h-[20px] flex justify-around items-center text-gray-100  ">
+            <hr className="w-3/8" />
+            <span className="">or</span>
+            <hr className="w-3/8" />
+          </div>
+          {/* checkbox */}
+          <Check/>
+          
+          {/* auth */}
+          <div className="w-full h-3/8 flex flex-col gap-4 justify-evenly">
+            {/* firebase auth */}
+            <div className="w-full h-[30px] flex justify-center items-center gap-2 border rounded-md border-gray-400 cursor-pointer  hover:bg-gray-200  duration-500 group">
+              <Image
+                src={google}
+                alt="google"
+                width={18}
+                height={18}
+                className="h-5 mr-2 "
+              />
 
-export default LoginPage
+              <span className="group-hover:text-black">Sign in with Google</span>
+            </div>
+            {/* width facebook */}
+            <div className="w-full h-[30px] flex justify-center items-center gap-2 border rounded-md border-gray-400 cursor-pointer hover:bg-gray-200  duration-500 group">
+              <FaFacebook className="text-blue-500 text-xl rounded-full" />
+              <span className="group-hover:text-black">
+                Sign in with Facebook
+              </span>
+            </div>
+            <SignIn/> 
+          </div>
+        </div>
+        
+      </form>
+      {/* right side */}
+      <div className="w-4/8 flex justify-center items-center ">
+        <Image src={sideImage} alt="left" className="w-3/4 h-3/4" />
+      </div>
+    </div>
+  );
+};
+
+export default LoginPage;
