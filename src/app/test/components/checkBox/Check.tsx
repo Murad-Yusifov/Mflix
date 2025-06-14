@@ -1,15 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 const Check = () => {
-  const [checked, setChecked] = useState(true);
-
   return (
     <div className="flex gap-4" >
       <input
         type="checkbox"
-        checked={checked}
-        onChange={(e) => setChecked(e.target.checked)}
         className=" checkbox-xl sm:checkbox checkbox-primary"
       />
       <p className="mt-2">
